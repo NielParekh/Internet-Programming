@@ -1,0 +1,13 @@
+<web-app>
+
+<servlet>
+<servlet-name>Calculator</servlet-name>
+<servlet-class>Calculator</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Calculator</servlet-name>
+<url-pattern>/calculate</url-pattern>
+</servlet-mapping>
+
+</web-app>

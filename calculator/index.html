@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            margin: 50px 200px;
+        }
+        
+        .form-container {
+            width: 400px;
+            height: 150px;
+            margin: auto;
+            border: 1px solid darkgray;
+            border-radius: 10px;
+            padding: 20px 50px;
+        }
+        
+        label {
+            float: left;
+        }
+        
+        input,
+        select {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;font-size: 48px;margin-bottom: 20px;">
+            Calculator
+        </h1>
+        <div class="form-container">
+            <form action="calculate" method="get">
+                <label for="op1">Operand1</label>
+                <input type="number" name="op1" id="op1" step="any">
+                <br><br>
+                <label for="op2">Operand2</label>
+                <input type="number" name="op2" id="op2" step="any">
+                <br><br>
+                <label for="operator">Choose operator</label>
+                <select name="operator" id="operator">
+                    <option value="add">Add</option>
+                    <option value="subtract">Subtract</option>
+                    <option value="multiply">multiply</option>
+                    <option value="divide">divide</option>
+                    <option value="power">power</option>
+                    <!-- <option value="modulus">modulus</option> -->
+                </select>
+                <br><br>
+                <input type="submit" value="calculate">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

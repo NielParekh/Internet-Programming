@@ -1,0 +1,8 @@
+#images
+*.png
+
+#compiled files
+*.class
+
+#SQL files
+*.sql
